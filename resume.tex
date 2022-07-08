@@ -1,0 +1,157 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://danielallen.io/}{\Large Daniel Allen}} & Email : \href{mailto:dallen@danielallen.io}{dallen@danielallen.io}\\
+  \href{http://danielallen.io/}{http://www.danielallen.io} %& Mobile : +447852478572 \\
+\end{tabular*}
+
+%--------SUMMARY--------------------
+\section{Summary}
+\small{Software engineer with industry and academic machine learning research experience. Knowledge of designing and deploying software, building and training machine learning models, and working with challenging data.}
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages and Libraries}
+    {Java 17, Python, BigQuery, Tensorflow, Keras, Numpy, Pandas, Scikit, LightGBM, Bash, SQL, MATLAB, C++}
+    \resumeSubItem{Technologies}{Linux, Maven, Git, Gitlab, Docker, Google Cloud, CMake}
+    \resumeSubItem{Toolkit}
+    {IntelliJ, VSCode, Terminal, SSH, Vim, LaTeX, 3D Slicer, ITK, ImageJ, Google Docs and Microsoft Office}
+    \resumeSubItem{Skills}{Simulation, Big Data, Testing, Re-factoring, Debugging, CI/CD, Statistical Analysis, Regression, Classification, Computer Vision, Time Series, Data Visualization, Data Preparation, ML Algorithms, Principal Component Analysis (PCA), Biomedical Imaging, Teaching} 
+  \resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------------
+\section{Experience}
+	\resumeSubHeadingListStart
+		\resumeSubheading
+		{Ocado Technology}{Hatfield, UK}
+		{Software Engineer (E2)}{Feb. 2021 - Present}
+		\resumeItemListStart
+		\resumeItem{Simulation Fidelity}{Improving the accuracy and confidence in simulations of automation control systems. Built reporting systems, data objects, and event schema to analyze data from production and corresponding simulations.}
+		\resumeItem{Warehouse Automation}{Implementing algorithms for new layouts and hardware. Used simulations to test and validate the performance of the warehouse with new }
+		\resumeItemListEnd
+    	\resumeSubheading
+      	{Western University}{London, ON, Canada}
+      	{Graduate Teaching Assistant}{2017 - 2019}
+      	\resumeItemListStart
+      	\resumeItem{Teaching Assistant - Introduction to Electrical Engineering}
+      	{Course teaching engineering undergraduate students electrical circuits and electrical engineering principals. Involved running labs and grading.}
+        \resumeItem{Teaching Assistant - Programming Fundamentals for Engineers}
+        {Course for teaching object oriented programming to undergraduate engineering students. }
+      	\resumeItemListEnd
+      	\resumeSubheading
+      	{McMaster University}{Hamilton, ON, Canada}
+      	{NSERC USRA Research Student}{May 2014 - Aug 2014}
+      	\resumeItemListStart
+      	\resumeItem{Automated gait analysis}
+      	{Used digital signal processing techniques on inertial measurement units to analyze and categorize patients by their walking gait.}
+      	\resumeItemListEnd	
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+	\resumeSubHeadingListStart
+		\resumeSubheading
+			{Western University}{London, ON}
+			{Masters of Engineering Science in Electrical \& Computer Engineering M.E.Sc}{ 2017 -- 2020}
+    	\resumeSubheading
+      		{Western University}{London, ON}
+      		{Bachelor of Engineering Science in Computer Engineering B.E.Sc}{2013 -- 2017}
+      		\resumeItemListStart
+      		\resumeItem{University of Western Ontario Gold Medal in Computer Engineering}{Awarded for highest grade in program.}
+      		\resumeItemListEnd
+  	\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{LifeStyle AI}
+      {Food and fitness app with multivariate time series body weight prediction using an LSTM in Tensorflow with macro nutrient and food recommendation.}
+    \resumeSubItem{Automated Segmentation of Temporal Bone Structures}
+      {Masters thesis on the automatic segmentation of critical anatomy within the ear for the purpose of creating 3D models for surgical simulation. Designed and implemented accurate segmentation algorithms using a variety of computer vision techniques such as multi-atlas based methods and customized convolutional neural networks.}
+    \resumeSubItem{U-net for Segmentation of Lungs from CT Images}
+      {A U-net convolutional neural network for segmenting lungs from the luna-16 dataset.}
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-------------
+\section{Key Journal Publications}
+	\resumeSubHeadingListStart
+		\resumeSubItem{Automated Segmentation of the Sigmoid Sinus using a Multi-Atlas Approach}{D. G. Allen et. al, 2019}
+		\resumeSubItem{Multi-atlas segmentation of the facial nerve from clinical CT for virtual reality simulators}{Brad Gare, D. G. Allen, et. al, 2019}
+		\resumeSubItem{Morphological analysis of sigmoid sinus anatomy: clinical applications to neurotological surgery}{Kylen Van Osch, D. G. Allen, et. al, 2019}
+	\resumeSubHeadingListEnd
+	  
+%--------COURSEWORK------------------
+%\section{Relevant Course Work}
+%\small{Machine Learning, Deeplearning.ai Coursera, SQL %for Data Scientists, Data Analytics, Discrete Math, %Linear algebra, Calculus, Digital Logic, Image %Processing, Business, Statistics}
+
+%-------------------------------------------
+\end{document}
